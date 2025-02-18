@@ -1,0 +1,126 @@
+# ===========================
+# OS-Specific Files
+# ===========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.swn
+*.bak
+
+# ===========================
+# Logs & Debug Files
+# ===========================
+*.log
+logs/
+*.pid
+*.seed
+*.sqlite
+*.sqlite3
+nohup.out
+
+# ===========================
+# Secret Keys & Credentials
+# ===========================
+.env
+.env.local
+.env.production
+.env.development
+*.key
+*.pem
+*.crt
+*.pfx
+secrets.json
+config/secrets.yml
+private.pem
+public.pem
+
+# ===========================
+# Node.js
+# ===========================
+node_modules/
+npm-debug.log
+yarn.lock
+pnpm-lock.yaml
+package-lock.json
+
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.venv/
+venv/
+pip-log.txt
+pytest_cache/
+Pipfile.lock
+
+# ===========================
+# Java
+# ===========================
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+.idea/
+.gradle/
+build/
+target/
+
+# ===========================
+# C, C++, Go, Rust
+# ===========================
+*.o
+*.a
+*.so
+*.out
+*.dSYM/
+*.exe
+*.dll
+vendor/
+
+# ===========================
+# JetBrains IDEs (PyCharm, WebStorm, IntelliJ, etc.)
+# ===========================
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+workspace.xml
+
+# ===========================
+# VS Code
+# ===========================
+.vscode/
+*.code-workspace
+
+# ===========================
+# Eclipse
+# ===========================
+.metadata/
+*.project
+*.classpath
+
+# ===========================
+# Miscellaneous
+# ===========================
+*.vagrant/
+*.sublime-workspace
+*.sublime-project
+*.sass-cache/
+.cache/
+.editorconfig
+.eslintcache
+.vscode/
+.history/
+
+# ===========================
+# Docker
+# ===========================
+*.dockerfile
+docker-compose.override.yml
