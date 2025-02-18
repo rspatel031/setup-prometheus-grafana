@@ -3,7 +3,7 @@
 set -xe  # Enable debug mode and Exit on any error
 set -o pipefail  # Catch errors in piped commands
 
-LOG_FILE="/var/log/prometheus_server_install.log"
+LOG_FILE="/var/log/prometheus_install.log"
 exec > >(tee -a "$LOG_FILE") 2>&1  # Redirect stdout and stderr to log file
 
 PROMETHEUS_VERSION="3.2.0"

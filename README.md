@@ -29,10 +29,12 @@ Prometheus is a monitoring system and time-series database.
 
 #### Steps:
 1. Run the installation script:
+
    ```bash
-   chmod +x prometheus_install.sh
-   sudo ./prometheus_install.sh
+   chmod +x prometheus.sh
+   sudo ./prometheus.sh
    ```
+
 2. The script performs the following:
     - Creates a dedicated Prometheus user
     - Downloads and installs Prometheus binaries
@@ -44,10 +46,12 @@ Node Exporter is used to collect system metrics.
 
 #### Steps:
 1. Run the installation script:
+   
    ```bash
-   chmod +x node_exporter_install.sh
-   sudo ./node_exporter_install.sh
+   chmod +x node_exporter.sh
+   sudo ./node_exporter.sh
    ```
+
 2. The script performs the following:
     - Creates a dedicated Node Exporter user
     - Downloads and installs Node Exporter
@@ -59,10 +63,12 @@ Alertmanager handles alerts from Prometheus.
 
 #### Steps:
 1. Run the installation script:
+   
    ```bash
-   chmod +x alertmanager_install.sh
-   sudo ./alertmanager_install.sh
+   chmod +x alert_manager.sh
+   sudo ./alert_manager.sh
    ```
+
 2. The script performs the following:
     - Creates a dedicated Alertmanager user
     - Downloads and installs Alertmanager binaries
@@ -74,10 +80,12 @@ Grafana is used to visualize Prometheus metrics.
 
 #### Steps:
 1. Run the installation script:
+   
    ```bash
-   chmod +x grafana_install.sh
-   sudo ./grafana_install.sh
+   chmod +x grafana.sh
+   sudo ./grafana.sh
    ```
+
 2. The script performs the following:
     - Downloads and installs Grafana
     - Configures Grafana systemd service
@@ -131,9 +139,9 @@ scrape_configs:
 
 ## Logging
 Logs for each component are stored in:
-- Prometheus: `/var/log/prometheus_server_install.log`
+- Prometheus: `/var/log/prometheus_install.log`
 - Node Exporter: `/var/log/node_exporter_install.log`
-- Alertmanager: `/var/log/alertmanager_install.log`
+- Alertmanager: `/var/log/alert_manager_install.log`
 - Grafana: `/var/log/grafana_install.log`
 
 

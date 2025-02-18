@@ -2,7 +2,7 @@
 
 set -xe  # Enable debug mode and Exit on any error
 set -o pipefail  # Ensure errors in piped commands are caught
-LOG_FILE="/var/log/alertmanager_install.log"
+LOG_FILE="/var/log/alert_manager_install.log"
 exec > >(tee -a "$LOG_FILE") 2>&1  # Redirect stdout and stderr to log file
 
 # Define version
