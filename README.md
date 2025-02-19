@@ -130,6 +130,17 @@ scrape_configs:
       - targets: ['localhost:9100']
 ```
 
+## Integrate Alertmanager with Prometheus
+Modify `/etc/prometheus/prometheus.yml` to include Alertmanager:
+
+```yaml
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - "localhost:9093"
+```
+
 ## Accessing the Web Interfaces
 - **Prometheus UI**: `http://<server-ip>:9090`
 - **Node Exporter Metrics**: `http://<server-ip>:9100/metrics`
